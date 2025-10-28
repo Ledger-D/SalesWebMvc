@@ -22,6 +22,8 @@ namespace SalesWebMvc.Controllers
             return View();
         }
 
+
+
         public IActionResult Contact()
         {
             ViewData["Message"] = "Your contact page.";
@@ -31,6 +33,7 @@ namespace SalesWebMvc.Controllers
 
         public IActionResult Privacy()
         {
+            ViewData["Message"] = "Privacy";
             return View();
         }
 
