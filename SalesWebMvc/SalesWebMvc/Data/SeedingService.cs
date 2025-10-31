@@ -1,7 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore.Internal;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using SalesWebMvc.Models;
 using SalesWebMvc.Models.Enums;
-using System;
+
 namespace SalesWebMvc.Data
 {
     public class SeedingService
@@ -12,18 +15,20 @@ namespace SalesWebMvc.Data
         {
             _context = context;
         }
-        public void seed()
+
+        public void Seed()
         {
             if (_context.Department.Any() ||
                 _context.Seller.Any() ||
-                _context.SalesRecords.Any())
+                _context.SalesRecord.Any())
             {
-                return; // DB ja foi populado.
+                return; // DB has been seeded
             }
+
             Department d1 = new Department(1, "Computers");
-            Department d2 = new Department(1, "Eletronics");
-            Department d3 = new Department(1, "Fashion");
-            Department d4 = new Department(1, "Books");
+            Department d2 = new Department(2, "Electronics");
+            Department d3 = new Department(3, "Fashion");
+            Department d4 = new Department(4, "Books");
 
             Seller s1 = new Seller(1, "Bob Brown", "bob@gmail.com", new DateTime(1998, 4, 21), 1000.0, d1);
             Seller s2 = new Seller(2, "Maria Green", "maria@gmail.com", new DateTime(1979, 12, 31), 3500.0, d2);
@@ -67,14 +72,13 @@ namespace SalesWebMvc.Data
 
             _context.Seller.AddRange(s1, s2, s3, s4, s5, s6);
 
-            _context.SalesRecords.AddRange(
+            _context.SalesRecord.AddRange(
                 r1, r2, r3, r4, r5, r6, r7, r8, r9, r10,
                 r11, r12, r13, r14, r15, r16, r17, r18, r19, r20,
                 r21, r22, r23, r24, r25, r26, r27, r28, r29, r30
             );
 
             _context.SaveChanges();
-
         }
     }
 }
