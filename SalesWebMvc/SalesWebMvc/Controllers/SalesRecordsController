@@ -1,6 +1,6 @@
 using System;
 using Microsoft.AspNetCore.Mvc; 
-
+using SalesWebMvc.Models.ViewModels;
 namespace SalesWebMvc.Controllers 
 {
     public class SalesRecordsController : Controller
@@ -10,6 +10,10 @@ namespace SalesWebMvc.Controllers
             return View();
         }
         public IActionResult SimpleSearch()
+        {
+            return View();
+        }
+         public IActionResult GroupingSearch()
         {
             return View();
         }
