@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SalesWebMvc.Controllers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -25,10 +26,10 @@ namespace SalesWebMvc.Models
         {
             Sellers.Add(seller);
         }
-
         // Soma toda as vendas do departamento, de acordo com a data inicial e final de todos os  vendedores(Sellers)
         public double TotalSales(DateTime initial, DateTime final)
-        {
+        { 
+        
             return Sellers.Sum(seller => seller.TotalSales(initial, final));
         }
 
