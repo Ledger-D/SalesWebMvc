@@ -13,9 +13,6 @@
         "packagesPath": "/home/daniel/.nuget/packages/",
         "outputPath": "/home/daniel/Área de trabalho/Projeto curso/SalesWebMvc/SalesWebMvc/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "/home/daniel/.dotnet/sdk/NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "/home/daniel/.nuget/NuGet/NuGet.Config"
         ],
@@ -27,6 +24,7 @@
         },
         "frameworks": {
           "netcoreapp2.1": {
+            "targetAlias": "netcoreapp2.1",
             "projectReferences": {}
           }
         },
@@ -38,6 +36,7 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
+          "targetAlias": "netcoreapp2.1",
           "dependencies": {
             "Microsoft.AspNetCore.App": {
               "suppressParent": "All",
@@ -48,9 +47,10 @@
             "Microsoft.AspNetCore.Razor.Design": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[2.1.2, )"
+              "version": "[2.1.1, )"
             },
             "Microsoft.NETCore.App": {
+              "suppressParent": "All",
               "target": "Package",
               "version": "[2.1.0, )",
               "autoReferenced": true
@@ -65,10 +65,17 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.122/RuntimeIdentifierGraph.json"
         }
       }
     }

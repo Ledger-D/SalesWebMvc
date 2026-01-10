@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "wrj8wFRD2kcbo4PND+9ctI6QHXCREIfAQabsHiqMiGvxJpJIH0tkThj2BQdKY+Kmr4iUVNBWF+CGNYzZNA/MNQ==",
+  "dgSpecHash": "Lq5XoIZ7j22CmpQt2ERcitdNe0xqWFI15mBQQeBgjzp8L123hOgaYa66zDVBA9Xv63wRJeWWJPQ6pjXrSwjq3Q==",
   "success": true,
   "projectFilePath": "/home/daniel/Área de trabalho/Projeto curso/SalesWebMvc/SalesWebMvc/SalesWebMvc.csproj",
   "expectedPackageFiles": [
@@ -72,7 +72,7 @@
     "/home/daniel/.nuget/packages/microsoft.aspnetcore.nodeservices/2.1.1/microsoft.aspnetcore.nodeservices.2.1.1.nupkg.sha512",
     "/home/daniel/.nuget/packages/microsoft.aspnetcore.owin/2.1.1/microsoft.aspnetcore.owin.2.1.1.nupkg.sha512",
     "/home/daniel/.nuget/packages/microsoft.aspnetcore.razor/2.1.1/microsoft.aspnetcore.razor.2.1.1.nupkg.sha512",
-    "/home/daniel/.nuget/packages/microsoft.aspnetcore.razor.design/2.1.2/microsoft.aspnetcore.razor.design.2.1.2.nupkg.sha512",
+    "/home/daniel/.nuget/packages/microsoft.aspnetcore.razor.design/2.1.1/microsoft.aspnetcore.razor.design.2.1.1.nupkg.sha512",
     "/home/daniel/.nuget/packages/microsoft.aspnetcore.razor.language/2.1.1/microsoft.aspnetcore.razor.language.2.1.1.nupkg.sha512",
     "/home/daniel/.nuget/packages/microsoft.aspnetcore.razor.runtime/2.1.1/microsoft.aspnetcore.razor.runtime.2.1.1.nupkg.sha512",
     "/home/daniel/.nuget/packages/microsoft.aspnetcore.responsecaching/2.1.1/microsoft.aspnetcore.responsecaching.2.1.1.nupkg.sha512",
